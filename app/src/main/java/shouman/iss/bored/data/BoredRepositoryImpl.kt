@@ -1,5 +1,6 @@
 package shouman.iss.bored.data
 
+import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import shouman.iss.bored.api.BoredApi
@@ -15,6 +16,7 @@ class BoredRepositoryImpl : BoredRepository {
        return withContext(Dispatchers.IO){
             val result = boredApi.getActivity()
             if(result.body() != null){
+                Log.i("Entity: ", result.toString())
                 return@withContext result.body()!!.toEntity()
             }
            return@withContext BoredDataEntity.EmptyDataEntity(emptyValueRepresentative = unknown)
