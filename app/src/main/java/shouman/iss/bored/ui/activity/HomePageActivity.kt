@@ -1,4 +1,4 @@
-package shouman.`is`.bored
+package shouman.iss.bored.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,9 +10,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import shouman.`is`.bored.ui.theme.BoredTheme
+import shouman.iss.bored.ui.theme.BoredTheme
 
-class MainActivity : ComponentActivity() {
+class HomePageActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

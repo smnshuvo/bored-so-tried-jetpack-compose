@@ -1,4 +1,4 @@
-package shouman.`is`.bored.ui.theme
+package shouman.iss.bored.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
